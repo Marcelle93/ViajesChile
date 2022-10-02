@@ -25,16 +25,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav  ml-auto mr-5 pr-5">
-            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="#">Quiénes Somos</a>
-            <a class="nav-link" href="#">Destacados</a>
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#quienes-somos">Quiénes Somos</a>
+            <a class="nav-link" href="#destacados">Destacados</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
           </div>
         </div>
       </nav>
     </header>
     <!-- Carousel -->
-    <section>
+    <section id="inicio">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -58,7 +58,7 @@
       </div>
     </section>
     <!-- About -->
-    <section>
+    <section id="quienes-somos" class="d-none d-md-block d-xl-none">
       <h2 class="text-center">¿QUIÉNES SOMOS?</h2>
       <div class="container">
         <div class="row">
@@ -84,63 +84,73 @@
       </div>
     </section>
     <!-- Card section -->
-    <section>
-      <h2 class="text-center">DESTACADOS</h2>
+    <section id="destacados">
+      <div class="container">
+        <h2 class="text-center">DESTACADOS</h2>
       <div class="card-deck">
-        <div class="card">
+        <div class="card bg-info">
           <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.  </p>
           </div>
         </div>
-        <div class="card">
+        <div class="card bg-info">
           <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. </p>
           </div>
         </div>
-        <div class="card">
+        <div class="card bg-info">
           <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
         </div>
-        <div class="card">
+        <div class="card bg-info">
           <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
           </div>
         </div>
       </div>
+      </div>
     </section>
     <!-- Form -->
-    <section>
-      <h2 class="text-center">CONTACTO</h2>
-      <form>
-          <div class="form-group">
-            <label for="formGroupExampleInput">Nombre</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-          </div>
-          <div class="form-group">
-            <label for="formGroupExampleInput2">Asunto</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Mensaje</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-        <button type="submit" class="btn btn-primary text-white bg-info">Enviar</button>
-      </form>
+    <section id="contacto">
+      <div class="container mb-5">
+        <h2 class="text-center">CONTACTO</h2>
+        <form>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Nombre</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Asunto</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Mensaje</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          <button type="submit" class="btn btn-primary text-white bg-info">Enviar</button>
+        </form>
+      </div>
     </section>
 
     <!-- Footer -->
     <Footer>
-      <div class="bg-info container-fluid">
-        <p>VIAJES CHILE</p>
-        <i class="fa-brands fa-square-github"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-square-twitter"></i>
-        <i class="fa-brands fa-square-facebook"></i>
+      <div class="bg-info container-fluid  ">
+        <div class="container  row ">
+          <div class=" col-12 col-md-6 my-2"> 
+            <h6 class="text-center">VIAJES CHILE</h6> 
+          </div>
+          <div class="col-12 col-md-6 text-center my-2 ">
+            <i class=" mx-2 fa-brands fa-square-github"></i>
+            <i class=" mx-2 fa-brands fa-linkedin"></i>
+            <i class=" mx-2 fa-brands fa-square-twitter"></i>
+            <i class="mx-2 fa-brands fa-square-facebook"></i>
+          </div>
+        </div>   
       </div>
     </Footer>
 
